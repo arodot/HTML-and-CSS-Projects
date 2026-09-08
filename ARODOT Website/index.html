@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>ARODOT Globals</title>
-        <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>ARODOT Globals</title>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page-specific meta description for the homepage -->
-    <meta name="description" content="Welcome to my personal web development portfolio. Explore my recent HTML, CSS, and JavaScript projects and tutorials.">
-    <title>Home - My Web Projects</title>
-        <blockquote cite="https://example.com/quote-source">
-  <p>The only limit to our realization of tomorrow is our doubts of today.</p>
-</blockquote>
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
-            </ul>
-            <ul>
-                <em>This Section is Emphasized</em>
-                <a href="#Computer" target="new"><li>Choose a Computer</li></a>
-                <a href="#Large Format"><li>Digital Printing</li></a>
-                <a href="#Print & Design target="new"><li>Quality Print & Design</li></a>
-            </ul>
-        </nav>
-        <!--HEADER-->
-        <header>
+    <meta name="description"
+        content="Welcome to my personal web development portfolio. Explore my recent HTML, CSS, and JavaScript projects and tutorials.">
+    <link rel="stylesheet" href="CSS/style.css">
+    <blockquote cite="https://example.com/quote-source">
+        <p>The only limit to our realization of tomorrow is our doubts of today.</p>
+    </blockquote>
+     <!-- Favicon link -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <ul id="nav-bo8555brder">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+        <ul>
+            <em>This Section is Emphasized</em>
+            <a href="#Computer" target="new">
+                <li>Choose a Computer</li>
+            </a>
+            <a href="#Large Format">
+                <li>|  Digital Printing</li>
+            </a>
+            <a href="#Print & Design target="new">
+                <li>|  Quality Print & Design</li>
+            </a>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1 class="animate-text">Welcome to ARODOT Website!</h1>
+        </div>
+    </header>
+    <!--COMPUTER IMAGES-->
+    <section>
+        <div class="container">
+            <h3>Choose a Product</h3>
             <div>
-                <h1 class="shadow-effect">Welcome to ARODOT Website</h1>
-            </div>
-        </header>
-         <!--COMPUTER IMAGES-->
-        <section>
-            <div id="Computer">
-                 <h3>Choose a Computer</h3>
-                 <div>
-                    <!--DESKTOP-->
-                    <div>
-                       <h3>Compaq</h3> 
-                       <img src="images/computers (1).png" alt="Picture of Computer">
+                <!--DESKTOP-->
+                <div id="Computer" class="column">
+                    <div class="image-container">
+                        <h3>Compaq</h3>
+                        <img src="images/computers (1).png" alt="Picture of Computer">
+                        <div class="overlay"></div>
+                            <div class="text">Compaq</div>
                     </div>
-                    <!--LARGE FORMAT IMAGE-->
-                    <div id="Large Format">
+                </div>
+                <!--LARGE FORMAT IMAGE-->
+                <div id="Large Format" class="column">
+                    <div class="image-container">
                         <h3>Digital Printing</h3>
-                        <img src="images/Large format (1).png" alt="Picture of Digital Printing"
+                        <img src="images/Large format (1).png" alt="Picture of Digital Printing">
+                        <div class="overlay"></div>
                     </div>
-                    <!--PRINT & DESIGN-->
-                    <div id="Print & Design">
-                    <h3>Quality Print & Design Made Affordable</h3>
-                    <img src="images/Print and Design.png" alt="Print and Design"
+                </div>
+                <!--PRINT & DESIGN IMAGE-->
+                <div id="Print & Design" class="column">
+                    <div class="image-container">
+                        <h3>Quality Print & Design</h3>
+                        <img src="images/Print and Design.png" alt="Print and Design">
+                        <div class="overlay"></div>
                     </div>
-                 </div>
-            </div>        
-        </section>
-        <!--VIDEOS-->
-        <Section>
-            <!--LARGE FORMAT VIDEO-->
-            <div>
-                <h3>Videos</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-IGz6L2485U?si=4op0VdtWjoN5vhjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-        </Section>
-        <article>
-            <h2>How to Learn HTML</h2>
-            <p>HTML is the backbone of web development...</p>
-        </article>
-        <details>
-            <summary>Click to view FAQs</summary>
-            <p>Here is the detailed answer to the question.</p>
-        </details>
-        <!-- Human-readable text inside, machine-readable date in the datetime attribute -->
-            <p>Published on <time datetime="2026-08-31">August 31, 2026</time>.</p>
-            <!-- Self-contained article -->
+        </div>
+    </section>
+    <!--VIDEOS-->
+    <Section>
+        <!--LARGE FORMAT VIDEO-->
+        <div id="video" class="container">
+            <h3>Videos</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-IGz6L2485U?si=4op0VdtWjoN5vhjy"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </Section>
+    <article>
+        <h2>How to Learn HTML</h2>
+        <p>HTML is the backbone of web development...</p>
+    </article>
+    <details>
+        <summary>Click to view FAQs</summary>
+        <p>Here is the detailed answer to the question.</p>
+    </details>
+    <!-- Human-readable text inside, machine-readable date in the datetime attribute -->
+    <p>Published on <time datetime="2026-08-31">August 31, 2026</time>.</p>
+    <!-- Self-contained article -->
     <article>
         <h2>Latest Web Development News</h2>
         <p>Semantic HTML tags help search engines understand the structure of website.</p>
@@ -83,23 +106,24 @@
             <p>Using elements like article, details, and time improves web accessibility and search engine indexing.</p>
         </details>
     </article>
-        <!--FOOTER-->
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>ARODOT Copyright &copy; 2026 - All Rights Reserved.</p>
-                    </td>
-                    <td>
-                        <p>Suit 236, King Street W.</p>
-                        <p>Brockville, Ontario</p>
-                    </td>
-                    <td>
-                        <p>4379334227, & +2347066374227</p>
-                    </td>
-                </tr>
-            </table>
-        </footer>           
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p> &copy; Arodot Global Inc. 2026 - All Rights Reserved.</p>
+                </td>
+                <td>
+                    <p>Suit 236, King Street W.</p>
+                    <p>Brockville, Ontario</p>
+                </td>
+                <td>
+                    <p>Tel: (437) 933-4227</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
 
-    </body>
+</body>
+
 </html>
