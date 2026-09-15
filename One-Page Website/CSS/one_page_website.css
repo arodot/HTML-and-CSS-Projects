@@ -1,0 +1,140 @@
+/* Reset basic margin & padding for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* Centralize text across the body */
+    text-align: center; 
+}
+
+/* Horizontal Navigation Bar */
+nav {
+    background-color: #1b4332; /* Dark green theme */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Horizontally center navigation links */
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white; /* Navigation link text color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b7e4c7; /* Subtle light green accent on hover */
+}
+
+/* Header & Footer Styling */
+header, footer {
+    background-color: darkgreen; /* Dark green background */
+    color: white; /* White text for header and footer */
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* Centralizing Main Content Elements (Text, Images, Videos, Forms) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers block elements like figures, iframe, form */
+    padding: 2rem 1rem;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin: 1.5rem 0;
+}
+
+/* Center and align image galleries */
+figure {
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Centering and responsive styling for Video */
+iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+form p {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Send Message Button Styling */
+form button[type="submit"] {
+    background-color: darkgreen; /* Dark green background */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #004d00; /* Darker green shade on hover */
+}
+
+hr {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 2rem auto;
+}
