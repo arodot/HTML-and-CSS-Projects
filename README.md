@@ -1,6 +1,8 @@
 # HTML-and-CSS-Projects
 Welcome! This repository contains coding projects, assignments, and practice exercises created during my web development coursework. It serves as a portfolio of my work with HTML, CSS, and related web technologies.
 
+---
+
 # Academy Cinemas 
 ## Overview
 This repository contains the homepage interface for Academy Cinemas. It features a responsive single-page web design for browsing movie showtimes, purchasing tickets, and reaching out to cinema staff.   
@@ -19,8 +21,7 @@ _ Ticket quantity.
 **Responsive Layout:**
 - Designed using Bootstrap grid components along with custom styling for screen responsiveness.   
 
-
-
+---
 
 # ARODOT Globals
 ## Overview
@@ -44,7 +45,7 @@ This repository contains the homepage for ARODOT Globals. It serves as a persona
 - CSS3 (Linked via CSS/style.css)   
 
 
-
+---
 
 # Creating Effects with CSS
 
@@ -73,7 +74,7 @@ This project is a basic HTML showcase demonstrating various image presentation t
     ├── dtf-dtg.jpg
     └── DTF.JPG
 
-
+---
 
 # Introduction to Bootstrap
 This simple web page demonstrates a basic responsive grid layout using Bootstrap 5.   
@@ -96,7 +97,7 @@ This simple web page demonstrates a basic responsive grid layout using Bootstrap
     ├── beach-2.jpg
     └── beach-3.jpg
 
-
+---
 
 # ARODOT Grind Cafe | One-Page Website
 This single-page HTML template serves as a website for ARODOT Grind Cafe, showcasing specialty coffee, pastries, and contact options.   
@@ -128,7 +129,7 @@ This single-page HTML template serves as a website for ARODOT Grind Cafe, showca
     └── one_page_website.css
 
 
-
+---
 
 # Simple Recipes
 This project is a website featuring a collection of easy-to-follow recipes, complete with prep times, difficulty levels, and flip-card image effects.   
