@@ -1,140 +1,350 @@
-/* Reset basic margin & padding for better consistency */
+/* ==========================================================================
+   Global Reset & Color Palette (Green, Yellow, White)
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-green: #0d4027;      /* Deep Forest Green */
+    --accent-yellow: #facc15;      /* Warm Gold / Bright Yellow */
+    --accent-yellow-hover: #eab308;
+    --bg-white: #ffffff;
+    --bg-light-green: #f2f7f4;   /* Minty White Tint */
+    --text-dark: #1b2820;
+    --text-light: #ffffff;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background-color: var(--bg-white);
+    color: var(--text-dark);
     line-height: 1.6;
-    /* Centralize text across the body */
-    text-align: center; 
 }
 
-/* Horizontal Navigation Bar */
-nav {
-    background-color: #1b4332; /* Dark green theme */
-    position: sticky;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+.navbar {
+    position: fixed;
     top: 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
+    width: 100%;
+    background-color: var(--primary-green);
     display: flex;
-    justify-content: center; /* Horizontally center navigation links */
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 15px 50px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li {
-    margin: 0 15px;
+.logo h1 {
+    color: var(--accent-yellow);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
 }
 
-nav ul li a {
-    color: white; /* Navigation link text color */
+.logo .sub-logo {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: var(--text-light);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #b7e4c7; /* Subtle light green accent on hover */
+.navbar ul li a:hover {
+    color: var(--accent-yellow);
 }
 
-/* Header & Footer Styling */
-header, footer {
-    background-color: darkgreen; /* Dark green background */
-    color: white; /* White text for header and footer */
-    padding: 2rem 1rem;
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-}
-
-footer p {
-    margin: 0.3rem 0;
-}
-
-/* Centralizing Main Content Elements (Text, Images, Videos, Forms) */
-main {
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(13, 64, 39, 0.75), rgba(13, 64, 39, 0.75)), 
+                url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat;
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers block elements like figures, iframe, form */
-    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
 }
 
-section {
-    width: 100%;
-    max-width: 800px;
-    margin: 1.5rem 0;
+.hero-content h2 {
+    color: var(--text-light);
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
-/* Center and align image galleries */
-figure {
+.hero-content p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
     display: inline-block;
-    margin: 1rem;
+    background-color: var(--accent-yellow);
+    color: var(--primary-green);
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-yellow-hover);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Section Titles & Dividers
+   ========================================================================== */
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary-green);
+    margin-top: 40px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.accent-line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-yellow);
+    margin: 10px auto 30px auto;
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+   About Section
+   ========================================================================== */
+.about-section {
+    padding: 60px 0;
+    background-color: var(--bg-white);
     text-align: center;
 }
 
-figure img {
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: var(--text-dark);
 }
 
-/* Centering and responsive styling for Video */
-iframe {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 1rem;
+/* ==========================================================================
+   Menu Section
+   ========================================================================== */
+.menu-section {
+    padding: 60px 0;
+    background-color: var(--bg-light-green);
 }
 
-/* Contact Form Styling */
-form {
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.menu-card {
+    background-color: var(--bg-white);
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid var(--accent-yellow);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin-bottom: 10px;
 }
 
-form p {
+.card-header h3 {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+}
+
+.price {
+    color: var(--primary-green);
+    background-color: var(--accent-yellow);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   Photo Gallery (Column Layout: 4 Images = 25% each)
+   ========================================================================== */
+.gallery-section {
+    padding: 60px 0;
+    background-color: var(--bg-white);
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+/* 4 Images accommodated at 25% width each */
+.gallery-col {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 10px;
+}
+
+.gallery-thumbnail {
     width: 100%;
-    max-width: 400px;
-    margin-bottom: 1rem;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Send Message Button Styling */
-form button[type="submit"] {
-    background-color: darkgreen; /* Dark green background */
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: 3px solid var(--primary-green);
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-form button[type="submit"]:hover {
-    background-color: #004d00; /* Darker green shade on hover */
+.gallery-thumbnail:hover {
+    transform: scale(1.04);
+    border-color: var(--accent-yellow);
 }
 
-hr {
-    width: 80%;
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 2rem auto;
+/* ==========================================================================
+   Lightbox Modal Styling
+   ========================================================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(13, 64, 39, 0.95); /* Semi-transparent Green overlay */
+}
+
+.modal-content-container {
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    max-width: 80%;
+}
+
+.modal-content {
+    max-width: 100%;
+    max-height: 75vh;
+    border: 4px solid var(--accent-yellow);
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+#modal-caption {
+    margin-top: 15px;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Close & Navigation Buttons */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--text-light);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--accent-yellow);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: var(--accent-yellow);
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.prev:hover, .next:hover {
+    color: var(--text-light);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .gallery-col {
+        flex: 50%;
+        max-width: 50%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    text-align: center;
+    padding: 30px 0;
+    border-top: 4px solid var(--accent-yellow);
+}
+
+footer h3 {
+    color: var(--accent-yellow);
+    margin-bottom: 10px;
 }

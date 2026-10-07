@@ -3,100 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to The Daily Grind Cafe. Explore our specialty coffees, watch our brewing guides, or contact us to book a table.">
-    <title>ARODOT Grind Cafe | Specialty Coffee & Pastries</title>
-    <link rel="stylesheet" href="css/one_page_website.css">
+    <title>ARODOT Grand Cafe and Grill</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="CSS/one_page_website.css">
 </head>
 <body>
 
-    <!-- Sticky Navigation Menu with Bookmark Links -->
-
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#video">Brewing Video</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <!-- 1. Home Page Section -->
-    <header id="home">
-        <h1>ARODOT Grind Cafe</h1>
-        <p>Welcome to your local home for handcrafted espresso, organic teas, and freshly baked artisan pastries. Stop by today or reach out to learn more about our weekly tasting workshops!</p>
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>ARODOT</h1>
+            <span class="sub-logo">Grand Cafe & Grill</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr>
-    <main>
 
-        <!-- 2. Pictures Gallery Section -->
-        <section id="gallery">
-            <h2>Our Signature Offerings</h2>
-            <p>A glance at what we serve fresh every day:</p>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400" alt="Freshly poured latte with detailed latte art heart" width="300">
-                <figcaption>Handcrafted Latte Art</figcaption>
-            </figure>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Assortment of fresh baked croissants and chocolate pastries" width="300">
-                <figcaption>Daily Baked Croissants</figcaption>
-            </figure>
-        </section>
-        <hr>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Experience Culinary Excellence</h2>
+            <p>Savor exquisite grill specialties and crafted beverages in a warm, friendly ambiance.</p>
+            <a href="#menu" class="btn-primary">View Our Menu</a>
+        </div>
+    </section>
 
-        <!-- 3. Video Section -->
-        <section id="video">
-            <h2>Watch Our Baristas at Work</h2>
-            <p>Learn how we craft the perfect pour-over coffee step-by-step:</p>
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube-nocookie.com/embed/st571DYYTR8"
-                title="Pour-over Coffee Preparation Video"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </section>
-        <hr>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Welcome to ARODOT</h2>
+            <div class="accent-line"></div>
+            <p class="about-text">
+                At ARODOT Grand Cafe & Grill, we combine traditional wood-fired grilling with modern gourmet cafe delights. From fresh morning coffees to savory evening steaks, our chefs select only the finest ingredients to deliver an unforgettable dining experience.
+            </p>
+        </div>
+    </section>
 
-        <!-- 4. Contact Form Section -->
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Have questions about catering or private events? Send us a message:</p>
-            <form action="#" method="post">
-                <p>
-                    <label for="userName">Full Name:</label><br>
-                    <input type="text" id="userName" name="userName" placeholder="Jane Doe" required>
-                </p>
-                <p>
-                    <label for="userEmail">Email Address:</label><br>
-                    <input type="email" id="userEmail" name="userEmail" placeholder="jane@example.com" required>
-                </p>
-                <p>
-                    <label for="inquiryType">Reason for Contact:</label><br>
-                    <select id="inquiryType" name="inquiryType">
-                    <option value="general">General Question</option>
-                    <option value="catering">Event Catering</option>
-                    <option value="feedback">Feedback</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="userMessage">Your Message:</label><br>
-                    <textarea id="userMessage" name="userMessage" rows="5" cols="40" placeholder="Type your message here..." required></textarea>
-                </p>
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
-            </form>
-        </section>
-    </main>
-    <hr>
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Featured Menu</h2>
+            <div class="accent-line"></div>
+            
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="card-header">
+                        <h3>Signature Flame Grill Ribeye</h3>
+                        <span class="price">$34</span>
+                    </div>
+                    <p>12oz prime beef ribeye grilled with fresh herbs and garlic compound butter.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-header">
+                        <h3>Gourmet Avocado Toast</h3>
+                        <span class="price">$14</span>
+                    </div>
+                    <p>Artisan sourdough topped with smashed avocado, poached eggs, and microgreens.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-header">
+                        <h3>Wild Salmon Medley</h3>
+                        <span class="price">$28</span>
+                    </div>
+                    <p>Pan-seared Atlantic salmon served with asparagus and lemon butter glaze.</p>
+                </div>
+                <div class="menu-card">
+                    <div class="card-header">
+                        <h3>Artisanal Espresso & Desserts</h3>
+                        <span class="price">$9</span>
+                    </div>
+                    <p>Hand-crafted dark roast espresso paired with fresh house-baked pastries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- 5. Footer Section -->
-    <footer>
-        <p>Location: 123 Main Street, Brockville, ON</p>
-        <p>Hours: Mon–Fri: 7am–6pm | Sat–Sun: 8am–5pm</p>
-        <p>&copy; 2026 ARODOT Grind Cafe.</p>
+    <!-- Photo Gallery Section (Lightbox Trigger Grid) -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <p class="section-subtitle">Click any image to view in full screen</p>
+            <div class="accent-line"></div>
+
+            <!-- 4 Column Layout (25% per column) -->
+            <div class="gallery-row">
+                <div class="gallery-col">
+                    <img src="images/baked-donuts.jpg" 
+                         data-large="images/baked-donuts.jpg" 
+                         alt="Baked Donuts Display" 
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-col">                    
+                    <img src="images/Summer_Dessert.jpg" 
+                         data-large="images/Summer_Dessert.jpg" 
+                         alt="Summer Dessert Selection" 
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-col">
+                         <img src="images/Croissant (1).png"
+                         data-large="images/Croissant (1).png" 
+                         alt="Croissant Dessert Selection" 
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-col">
+                    <img src="images/chocolate-cream-pie-93-1.jpg" 
+                         data-large="images/chocolate-cream-pie-93-1.jpg" 
+                         alt="Chocolate Cream Pie" 
+                         class="gallery-thumbnail">
+                </div>
+            </div>
+
+            <!-- 4 Column Layout (25% per column) -->
+            <div class="gallery-row">
+                <div class="gallery-col">
+                    <img src="images/French_Vanilla.jpg" 
+                         data-large="images/French_Vanilla.jpg" 
+                         alt="French Vanilla Ice Cream" 
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-col">
+                    <img src="images/Handcraft.jpg" 
+                         data-large="images/Handcraft.jpg" 
+                         alt="Handcrafted Dessert" 
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-col">
+                    <img src="images/Coffee.jpg" 
+                         data-large="images/Coffee.jpg" 
+                         alt="Freshly Brewed Coffee" 
+                         class="gallery-thumbnail">
+                </div>
+                <div class="gallery-col">
+                    <img src="images/Fries.png" 
+                         data-large="images/Fries.png" 
+                         alt="Crispy Fries" 
+                         class="gallery-thumbnail">
+                </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="modal">
+        <span class="close-btn">&times;</span>
+        <div class="modal-content-container">
+            <img class="modal-content" id="modal-img" alt="Enlarged gallery view">
+            <div id="modal-caption"></div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <h3>ARODOT Grand Cafe & Grill</h3>
+            <p>245 King Street East, Suite 207 | Open Daily 8:00 AM - 11:00 PM</p>
+            <p>&copy; 2026 ARODOT. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="JS/one_page_website.js"></script>
 </body>
 </html>
