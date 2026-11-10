@@ -1,6 +1,6 @@
 // 3. JavaScript Animation using setInterval
 function startAnimation() {
-    const box = document.getElementById("animated-box");
+    const box = document.getElementById("animatedBox");
     const stageWidth = box.parentElement.clientWidth;
     const boxWidth = box.clientWidth;
     
